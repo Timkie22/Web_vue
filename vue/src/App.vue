@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import StoreItem from './components/StoreItem.vue';
+import StoreItem from './components/StoreItem.vue'
+import logo from 'src/logo.jpg'
+
+
 
 const items = ref([
   {
@@ -32,7 +35,7 @@ const items = ref([
 <template>
   <div id="app">
     <header>
-      <img src="logo.jpg" alt="Tims Tech-store Logo" class="store-logo">
+      <img :src="logo" alt="Tims Tech-store Logo" class="store-logo">
       <h1>Tims Tech-store</h1>
     </header>
 
